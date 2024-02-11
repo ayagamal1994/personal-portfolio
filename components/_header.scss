@@ -1,0 +1,88 @@
+.header {
+    background-color: var(--color-background);
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    border-bottom: 1px solid var(--color-text);
+
+}
+.header-body {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 0;
+    background-color: var(--color-background);
+}
+.header a {
+    font-size: var(--font-size-24)
+}
+
+.header nav ul {
+    display: flex;
+    gap: 2rem
+}
+.header ul li .nav_link {
+    font-weight: var(--font-weight-medium);
+    
+}
+.header ul li .nav_link:hover,
+.header ul li .nav_link:visited {
+    text-decoration: underline;
+}
+html:has(#bio:target) .nav_link[href="#bio"],
+html:has(#skills:target) .nav_link[href="#skills"],
+html:has(#media:target) .nav_link[href="#media"],
+html:has(#projects:target) .nav_link[href="#projects"],
+html:has(#clients:target) .nav_link[href="#clients"],
+html:has(#contact:target) .nav_link[href="#contact"] {
+    color: var(--color-blue);
+    font-weight: var(--font-weight-bold);
+    text-decoration: underline;
+}
+.header .toggle {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-left: auto;
+}
+.header .toggle h3 {
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-20);
+    display: block;
+    position: relative;
+}
+.header .toggle .toggle-label {
+    background-color: rgb(197, 198, 199);
+    position: relative;
+    display: block;
+    border-radius: 1.5rem;
+    width: 4.5rem;
+    height: 2.2rem;
+    cursor: pointer;
+    padding: .3rem .4rem;
+    transition: var(--transition-timing);
+    z-index: 4
+}
+.header .toggle .toggle-label::after {
+    content: "";
+    position: absolute;
+    width: 1.6rem;
+    height: 1.6rem;
+    background-color: var(--color-green);
+    border-radius: 50%;
+    display: block;
+    transition: var(--transition-timing);
+}
+.header .toggle input {
+    display: none;
+}
+
+.header .toggle input:checked + .toggle-label::after {
+    transform: translateX(2.1rem);
+    background-color: var(--color-green);
+}
+
+/* phone header */
+.burger-menu {
+    display: none;
+}

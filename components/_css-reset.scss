@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    color: var(--color-text)
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    display: inline-block;
+    text-decoration: none;
+    font-size: var(--font-size-20)
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+ul, ol {
+    list-style: none;
+}
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 11rem;
+}
+body {
+    font-size: 1.6rem;
+    font-family: var(--font-family-raleway);
+    background-color: var(--color-background);
+    color: var(--color-text)
+}
+
+p {
+    line-height: 1.8;
+    font-size: var(--font-size-20)
+}
+img {
+    max-width: 100%;
+}
+
+.container {
+    display: grid;
+    row-gap: 11rem;
+    margin: 0 auto;
+    max-width: calc(var(--container-width) + var(--gutter) * 2);
+    padding-inline: var(--gutter);
+    margin: 0 auto
+
+}
+
+.section {
+    width: 100%;
+    margin: 0 auto;
+    padding: 11rem 0;
+}
+
+/* theme colors */
+html:has(.toggle input:checked) {
+    --color-background: #000;
+    --color-text: #fff;
+    --color-box-img: var(--color-green);
+    --color-link-bg: var(--color-green);
+    --color-grey: var(--color-black);
+    --color-input-border: var(--color-white)
+}

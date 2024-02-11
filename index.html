@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Aya Gamal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&family=Raleway:wght@300;600&display=swap" rel="stylesheet"/>
+    <link href="styles.css" rel="stylesheet"/>
+</head>
+<body>
+        
+    <header class="header">
+        <div class="container">
+            <div class="header-body">
+                <label for="header-menu" class="burger-label">
+                    <div class="burger-icon">
+                        <div class="burger-bar"></div>
+                        <div class="burger-bar"></div>
+                        <div class="burger-bar"></div>
+                    </div>
+                </label>
+                
+                
+                <input type="checkbox" class="burger-menu" id="header-menu"/>
+                <nav>
+                    <ul>
+                        <li><a href="#bio" class="nav_link">bio</a></li>
+                        <li><a href="#skills" class="nav_link">skills</a></li>
+                        <li><a href="#media" class="nav_link">media</a></li>
+                        <li><a href="#projects" class="nav_link">projects</a></li>
+                        <li><a href="#clients" class="nav_link">my clients</a></li>
+                        <li><a href="#contact" class="nav_link">contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="toggle">
+                    <h3>switch theme</h3>
+                    <input type="checkbox" name="checkbox toggle" id="toggle"/>
+                    <label for="toggle" class="toggle-label"></label>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    
+    <section id="bio" class="bio section">
+        <div class="container">
+            <div class="bio-body">
+                
+                <div class="bio_data">
+                    <h1>Hi There, I'm A Passionate Front-End Developer</h1>
+                    <p>My name is <span class="name">Aya Gamal</span><br/> I'm a Front-End Developer<br/>
+                    contact me on: <br/><a class="face" href="https://www.facebook.com/profile.php?id=100009573023719&mibextid=ZbWKwL">Facebook</a>, <a class="linked" href="https://www.linkedin.com/in/aya-gamal1994">LinkedIn</a> and <a class="github" href="https://github.com/ayagamal1994/ayagamal1994">Github</a>.</p>
+                    <a href="#contact" class="bio_hi">say hi</a>
+                    <a href="#" class="bio_cv">download cv <span class="bio_arrow">↓</span></a>
+                </div>
+                <div class="bio_pic">
+                    <img src="images/girl.jpg" alt="developer girl"/>
+                </div>
+            
+            </div>  
+        </div>      
+    </section>
+    
+
+    <div class="video_background">
+        <video autoplay muted loop>
+            <source src="images/video-loop.mp4" type="video/mp4"/>
+        </video>
+    </div>
+    
+    <section id="skills" class="skills section">
+        <div class="container">
+            <h2 class="h2_heading">skills</h2>
+            <ul>
+                <li>
+                    <h3 class="h3-heading">html</h3>
+                    <p>8 years</p>
+                </li>
+                <li>
+                    <h3 class="h3-heading">css</h3>
+                    <p>8 years</p>
+                </li>
+                <li>
+                    <h3 class="h3-heading">javascript</h3>
+                    <p>8 years</p>
+                </li>
+                <li>
+                    <h3 class="h3-heading">react</h3>
+                    <p>4 years</p>
+                </li>
+                <li>
+                    <h3 class="h3-heading">redux</h3>
+                    <p>3 years</p>
+                </li>
+                <li>
+                    <h3 class="h3-heading">react testing library</h3>
+                    <p>1 year</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="media" class="media section">
+        <div class="container">
+            <video  controls poster="images/together.png">
+                <source src="images/together.mp4"/>
+            </video>
+        </div>
+    </section>
+
+    <section id="projects" class="projects section">
+        <div class="container">
+            <h2 class="h2_heading">my featured <br/>projects</h2>
+            <ul class="row-2">
+                <li>
+                    <img class="pro-img" src="./images/healthy.png" alt="healthy"/>
+                </li>
+                <li>
+                    <h3 class="h3-heading">healthy</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+                    <ul class="links">
+                        <li class="project-link">
+                            <a href="#">chrome link</a>
+                            <img src="./images/external-icon.png" alt="icon"/>
+                        </li> 
+                        <span> - </span> 
+                        <li class="project-link">
+                            <a href="#">edge link</a>
+                            <img src="./images/external-icon.png" alt="icon"/>
+                        </li>
+                    </ul>
+                </li>
+            
+                
+            <li>
+                <h3 class="h3-heading">together</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+                <ul class="links">
+                    <li class="project-link">
+                        <a href="#">chrome link</a>
+                        <img src="./images/external-icon.png" alt="icon"/>
+                    </li> 
+                    <span> - </span> 
+                    <li class="project-link">
+                        <a href="#">edge link</a>
+                        <img src="./images/external-icon.png" alt="icon"/>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <img class="pro-img" src="./images/together.png" alt="healthy"/>
+            </li>
+        </ul>
+        </div>
+    </section>
+
+
+    <section id="clients" class="clients section">
+        <div class="container">
+            <h2 class="h2_heading">what my <br>clients says</h2>
+            <div class="opinions">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod veniam magnam ab consectetur doloribus molestias porro! Et enim totam ab dignissimos quasi exercitationem sunt officiis voluptates consequatur, cum repellendus libero!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod veniam magnam ab consectetur doloribus molestias porro! Et enim totam ab dignissimos quasi exercitationem sunt officiis voluptates consequatur, cum repellendus libero!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod veniam magnam ab consectetur doloribus molestias porro! Et enim totam ab dignissimos quasi exercitationem sunt officiis voluptates consequatur, cum repellendus libero!</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact section">
+        <div class="container">
+            <div class="row-2">
+                <div class="contact-item">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente quam temporibus quisquam natus vero recusandae repellendus. At, modi non labore nobis illo, quam, autem mollitia error necessitatibus voluptate nemo sint!</p>
+                    <a class="mail" href="mailto:example@gmail.com">example@gmail.com</a>
+                    <ul class="social-icons">
+                        <li><a href="#"><img src="images/facebook.svg" alt="facebook"></a></li>
+                        <li><a href="#"><img src="images/LinkedIn.svg" alt="linkedin"></a></li>
+                        <li><a href="#"><img src="images/github.svg" alt="github"></a></li>
+                        <li><a href="#"><img src="images/instagram.svg" alt="instagram"></a></li>
+                        <li><a href="#"><img src="images/twitter.svg" alt="twitter"></a></li>
+                        <li><a href="#"><img src="images/youtube.svg" alt="youtube"></a></li>
+                    </ul>
+                </div>
+                <div class="contact-item">
+                    <h2 class="h2_heading">let's work <br/> together!</h2>
+                    <form action="">
+                        <div class="inputs">
+                            <input type="text" placeholder="Full Name" name="name" id="name" autocomplete="name" required/>
+                            <input type="tel" placeholder="Phone No." pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" autocomplete="tel" name="phone" required/>
+                        </div>
+                        <textarea placeholder="Your Message" name="message" row="2" required></textarea>
+                        <input class="submit" type="submit" value="send message"/>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>all right reserved &copy 2024 aya gamal</p>
+        </div>
+    </footer>
+
+</body>
+</html>

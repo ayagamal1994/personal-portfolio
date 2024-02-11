@@ -1,0 +1,46 @@
+.projects {
+    background-color: var(--color-background);;
+}
+.row-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10rem 5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.projects .pro-img{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 250px;
+    min-width: 100%
+}
+.projects p {
+    color: grey;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    font-family: var(--font-family-poppins);
+}
+.projects .links {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 2rem;
+    color:var(--color-darker-blue);
+}
+.projects .links a {
+    text-decoration: underline;   
+    font-weight: var(--font-weight-semi-bold);
+    font-family: var(--font-family-poppins);
+}
+.projects .project-link {
+    display: flex;
+    align-items: center;
+    
+}
+.projects .project-link img {
+    height: 4rem;
+    margin-left: 5px;
+}
+.projects .links span {
+    font-weight: bold;
+    font-size: 3rem
+}

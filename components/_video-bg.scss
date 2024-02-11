@@ -1,0 +1,14 @@
+.video_background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100vh;
+    opacity: .08
+}
+.video_background video {
+    width: 100%;
+    min-width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}

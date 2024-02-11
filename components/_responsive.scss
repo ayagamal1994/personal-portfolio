@@ -1,0 +1,103 @@
+@media only screen and (min-width: 2000px) {
+    html {
+        font-size: 16px
+    }
+}
+@media only screen and (min-width: 1200px) {
+    html {
+        font-size: 8px
+    }
+}
+
+@media only screen and (max-width: 1199px){
+    html {
+        font-size: 6px
+    }
+
+}
+@media (max-width: 800px) {
+    html {
+        font-size: 5px
+    }
+    .row-2 {
+        grid-template-columns: 1fr;
+        gap: 5rem 3rem;
+    }
+    .projects .row-2 li:last-child {
+        grid-area: 3;
+    }
+    .projects .row-2 li img {
+        height: unset;
+        max-width: 100%;
+    }
+    .bio-body {
+        grid-template-columns:1fr;
+        gap: 5rem;
+        text-align: center;
+    }
+    .bio_pic {
+        grid-area: 1;
+        justify-self: center;
+        margin-bottom: 5rem;
+        max-width: 70%
+    }
+    .bio_pic img {
+        max-width: 100%
+    }
+    .skills {
+        text-align: center;
+    }
+    .skills ul {
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+    .contact-item:last-child {
+        grid-area: 1;
+    }
+}
+@media (max-width: 500px){
+    .skills ul {
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+    .burger-icon {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        gap: .75rem;
+        position: relative;
+        z-index: 2
+    }
+
+    .burger-bar {
+        height: .3rem;
+        width: 4.375rem;
+        background-color: var(--color-text);
+        transition: var(--transition-timing);
+    }
+    .header:has(.burger-menu:checked) .burger-bar:nth-child(1){
+        transform: translateY(10px) rotate(40deg);
+    }
+    .header:has(.burger-menu:checked) .burger-bar:nth-child(2){
+        opacity: 0;
+    }
+    .header:has(.burger-menu:checked) .burger-bar:nth-child(3){
+        transform: translateY(-2px) rotate(-40deg);
+    }
+    .burger-menu:checked + nav {
+        top: 9rem;
+        z-index: 0
+    }
+    .header nav {
+        position: absolute;
+        top: 0;
+        left: -2rem;
+        width: auto;
+        z-index: -2;
+        border-bottom: 1px solid var(--color-background);
+        background-color: var(--color-background);
+        transition: var(--transition-timing);
+        width: calc(100vw - 3.5rem);
+        padding: 2rem
+    }
+}

@@ -1,0 +1,17 @@
+.clients {
+    background-color: var(--color-background);;
+    position: relative;
+    z-index: 1
+}
+.clients .opinions {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-color: gray var(--color-background);
+}
+.clients .opinions p {
+    flex-basis: 100%;
+    flex-shrink: 0;
+    font-size: var(--font-size-40);
+    scroll-snap-align: start;
+}
